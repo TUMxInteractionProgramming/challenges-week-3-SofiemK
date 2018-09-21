@@ -19,4 +19,13 @@ function swithBackStar(){
     $('#starred').attr('src',"http://ip.lfe.mw.tum.de/sections/star.png");
 }
 
-function selectTab(){}
+function selectTab(tabId){
+    console.log('Changing to tab' + tabId);
+    $('.selected').removeClass("selected");
+    $('#'+tabId).addClass("selected");
+}
+
+function toggleEmoji(){
+    $('#emojis').toggle();
+}
+
